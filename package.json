@@ -31,10 +31,10 @@
     "@types/jest": "24.0.12",
     "@types/lodash": "4.14.123",
     "@types/node": "12.6.2",
-    "jest": "24.5.0",
+    "jest": "25.2.4",
     "mock-fs": "4.9.0",
     "rimraf": "2.6.3",
-    "ts-jest": "24.0.2",
+    "ts-jest": "25.3.0",
     "tslint": "5.14.0",
     "typescript": "^3.4.1"
   },
