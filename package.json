@@ -1,6 +1,6 @@
 {
-  "name": "serverless-plugin-typescript",
-  "version": "0.0.0-semantic-release",
+  "name": "@oohmedia/serverless-plugin-typescript",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/src/index.js",
   "files": [
@@ -9,39 +9,30 @@
     "README.md"
   ],
   "scripts": {
-    "prepublish": "npm run build",
-    "precommit": "npm run test",
+    "prepublish": "yarn build",
+    "precommit": "yarn test",
     "build": "rimraf dist && tsc",
-    "pretest": "npm run lint",
-    "test": "jest",
+    "pretest": "yarn lint",
+    "test": "jest --verbose",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prisma/serverless-plugin-typescript.git"
-  },
-  "keywords": [
-    "serverless",
-    "serverless plugin",
-    "typescript",
-    "aws lambda"
-  ],
+  "repository": "https://github.com/oohmedia/serverless-plugin-typescript",
   "devDependencies": {
-    "@types/fs-extra": "5.0.5",
-    "@types/jest": "24.0.12",
-    "@types/lodash": "4.14.123",
-    "@types/node": "12.6.2",
-    "jest": "25.2.4",
-    "mock-fs": "4.9.0",
-    "rimraf": "2.6.3",
-    "ts-jest": "25.3.0",
-    "tslint": "5.14.0",
+    "@types/fs-extra": "8.1.0",
+    "@types/jest": "25.2.1",
+    "@types/lodash": "4.14.150",
+    "@types/node": "13.13.0",
+    "jest": "25.3.0",
+    "mock-fs": "4.11.0",
+    "rimraf": "3.0.2",
+    "ts-jest": "25.4.0",
+    "tslint": "6.1.1",
     "typescript": "^3.4.1"
   },
   "dependencies": {
-    "fs-extra": "^7.0.1",
-    "globby": "^9.2.0",
-    "lodash": "^4.17.11"
+    "fs-extra": "^9.0.0",
+    "globby": "^11.0.0",
+    "lodash": "^4.17.15"
   },
   "peerDependencies": {
     "typescript": ">=2.2.2"
